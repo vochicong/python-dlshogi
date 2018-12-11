@@ -121,7 +121,7 @@ for e in range(args.epoch):
     
     optimizer.new_epoch()
 
-logging.info('save the model')
-serializers.save_npz(args.model, model)
-logging.info('save the optimizer')
-serializers.save_npz(args.state, optimizer)
+    logging.info('save the model')
+    serializers.save_npz(args.model, model)
+    logging.info('save the optimizer')
+    serializers.save_npz(args.state, optimizer)
